@@ -10,11 +10,10 @@
     />
     <style>
       .jumbotron {
-        background-image: url("https://github.com/jla1984/Lecture1_Bootstrap/blob/main/root/HD-wallpaper-70s-tie-dye-rainbow-neon-colors-patterns-abstract-trip.jpg?raw=true");
-        background-size: contain;
+        background-image: url("https://media.istockphoto.com/id/1338042402/vector/tie-dye-shibori-seamless-pattern-abstract-texture.jpg?s=612x612&w=0&k=20&c=rbXCkYcaEuDUJrfcbc0hh49nTJoh6GXj-3VJWONP3r0=");
+        background-size: cover;
         background-position: center;
-        background-attachment: fixed;
-        color: navy;
+        color: #ffffcc;
         border-bottom: 5px solid black;
       }
       .navbar {
@@ -23,16 +22,17 @@
         margin-top: 50px;
       }
       .jth1 {
-        text-shadow: -2px -2px 0 #c9ff00, 2px -2px 0 #c9ff00, -2px 2px 0 #c9ff00,
-          2px 2px 0 #c9ff00;
+        text-shadow: 2px 2px #003366, -2px -2px #003366;  
+        font-size: 48px;  
       }
       .jtp {
-        text-shadow: -1px -1px 0 #c9ff00, 1px -1px 0 #c9ff00, -1px 1px 0 #c9ff00,
-          1px 1px 0 #c9ff00;
-        font-weight: bold;
+        text-shadow: 1px 1px #003366, -1px -1px #003366;  
+        font-weight: bold;  
+        font-size: 28px;
       }
       body {
-        background-image: url("https://fiftyfc.com/wp-content/uploads/2021/04/grass-background-1.jpg");
+        background-image: url("https://i.redd.it/uiqck2ae2pe91.gif");
+        background-size: cover;
       }
       .container2 {
         background-color: rgba(0, 0, 0, 0.5);
@@ -48,14 +48,60 @@
         padding-right: 10px;
       }
       h5 {
-        padding-bottom: 20px;
+        padding-top: 10px;
+      }
+      ul {
+        list-style-type: none;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+      li {
+        background-color: #003366;
+        padding: 10px;
+        border: 7px solid #ffffcc;
+        border-style: outset;
+        width: 150px;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+      li:hover {
+        background-color: #003366;
+        padding: 10px;
+        border: 7px solid #ffffcc;
+        border-style: inset;
+        width: 150px;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+      .button3 {
+        display: block;
+        color: #ffffcc;
+        text-decoration: underline;
+        margin-top: 20%;
+        margin-bottom: 20%;
+      }
+      a {
+        display: block;
+        color: #ffffcc;
+        text-decoration: underline;
+        margin-top: 30%;
+        margin-bottom: 20%;
+      }
+      a:hover {
+        display: block;
+        background-color: #ffffcc;
+        color: #003366;
       }
     </style>
   </head>
   <body class="bg-success">
     <div class="jumbotron jumbotron-fluid p-5 text-center">
-      <h1 class="jth1">The Pool & Lawn Whisperers</h1>
-      <p class="jtp">Where Pools and Lawns Find Their Zen</p>
+      <h1 class="jth1">Jenny's Fun Site</h1>
+      <p class="jtp">All Things Fun</p>
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg">
           <div class="container justify-content-center">
@@ -74,17 +120,11 @@
               class="collapse navbar-collapse justify-content-center"
               id="navbarNav"
             >
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="page2.html">Page 2</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="page3.html">Page 3</a>
-                </li>
-              </ul>
+                <ul style="text-align: center;">
+                    <li><a href="index.html" target="_blank">Home Page</a></li>
+                    <li><a href="page2.html" target="_blank">Featured Cats</a></li>
+                    <li><a href="page3.html" target="_blank" class="button3">Games & Entertainment</a></li>
+                </ul>
             </div>
           </div>
         </nav>
@@ -95,18 +135,11 @@
         <div class="col-sm-12">
           <h3 class="text-center">About Us</h3>
           <p class="text-center">
-            Welcome to The Pool & Lawn Whisperers, where we turn pool and lawn
-            upkeep into an art form! Get ready to experience a world of
-            laughter, relaxation, and slightly exaggerated promises. P.S. We
-            also do hot tubs!
+            Welcome to Jenny's Fun Site, all things fun - where you'll find nothing but random, funny, entertaining, and potentially "weird" content.
           </p>
           <div class="text-center">
             <img
-              src="https://st.hzcdn.com/simgs/pictures/pools/freeform-pool-with-diving-board-and-slide-great-escapes-custom-pools-img~37216da7032c8874_9-2818-1-921ba55.jpg"
-              width="500px"
-            />
-            <img
-              src="https://cdn.create.vista.com/api/media/small/3687189/stock-photo-manicured-yard"
+              src="https://raw.githubusercontent.com/jla1984/Lecture1_Bootstrap/f25bd9202f2b2b6f040a3542e547af2b1873b178/root/200w-unscreen.gif"
               width="500px"
             />
           </div>
@@ -117,9 +150,8 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h5>Contact</h5>
-            <p>Email: pool.lawn.zen@gmail.com</p>
-            <p>Phone: +1 510 555 4321</p>
+            <h5>Contact Us</h5>
+            <p>Email: jennysfun@gmail.com <br> Phone: +1 510 555 4321</p>
           </div>
         </div>
       </div>
