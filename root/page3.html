@@ -151,9 +151,17 @@
         <form id="madLibForm" action="https://jla1984.github.io/Lecture1_Bootstrap/root/page3.php" method="post">
             <table>
                 <tr>
-                    <td><label for="noun">Noun:</label></td>
-                    <td><input type="text" id="noun" name="noun" required></td>
+                    <td><label for="city">City:</label></td>
+                    <td><input type="text" id="city" name="city" required></td>
                 </tr>
+                <tr>
+                    <td><label for="adjective">Adjective:</label></td>
+                    <td><input type="text" id="adjective" name="adjective" required></td>
+                </tr>
+                <tr>
+                    <td><label for="animal">Animal:</label></td>
+                    <td><input type="text" id="animal" name="animal" required></td>
+                </tr>              
                 <tr>
                     <td><label for="yourname">Your Name:</label></td>
                     <td><input type="text" id="yourname" name="yourname" required></td>
@@ -163,10 +171,6 @@
                     <td><input type="text" id="verb" name="verb" required></td>
                 </tr>
                 <tr>
-                    <td><label for="adjective">Adjective:</label></td>
-                    <td><input type="text" id="adjective" name="adjective" required></td>
-                </tr>
-                <tr>
                     <td><label for="adverb">Adverb:</label></td>
                     <td><input type="text" id="adverb" name="adverb" required></td>
                 </tr>
@@ -174,7 +178,7 @@
             <button type="submit">Generate Mad Lib</button>
         </form>
         <div id="madLibOutput" class="hidden">
-            <p>Once upon a time, there was a(n) <span id="outputNoun"></span> named <span id="yourname"></span> who loved to <span id="outputVerb"></span> <span id="outputAdverb"></span>. One day, the <span id="outputNoun"></span> decided to <span id="outputAdjective"></span> <span id="outputVerb"></span> <span id="outputAdverb"></span>. The end.</p>
+            <p>In the heart of the bustling city of <span id="outputCity"></span>, a(n) <span id="outputAdjective"></span> <span id="outputAnimal"></span> named (Name) decided to embark on a quest for the world's most delicious (Type of Food). Armed with only a (Noun) and a map marked with an X, (Name) dodged (Plural Noun) and navigated through narrow (Plural Noun), all while being chased by a (Adjective) (Occupation). The adventure was filled with unexpected turns, including a surprise dance-off against a gang of (Adjective) (Plural Noun) and a close encounter with a (Mythical Creature). In the end, (Name) discovered that the true treasure wasn't the (Type of Food) but the (Adjective) friendships made along the way.</p>
         </div>
         <br>
         <br>
