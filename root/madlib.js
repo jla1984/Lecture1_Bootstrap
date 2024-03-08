@@ -21,16 +21,10 @@ document.getElementById('madLibForm').addEventListener('submit', function(event)
     document.getElementById('outputCity').textContent = city;
     document.getElementById('outputAdjective').textContent = adjective;
     document.getElementById('outputAnimal').textContent = animal;
-    document.querySelectorAll('.outputName').forEach(function(elem) {
-        elem.textContent = name;
-    });
-    document.querySelectorAll('.outputFood').forEach(function(elem) {
-        elem.textContent = food;
-    });   
+    document.getElementById('outputName1').textContent = name;
+    document.getElementById('outputFood1').textContent = food;
     document.getElementById('outputNoun').textContent = noun;
-    document.querySelectorAll('.outputName').forEach(function(elem) {
-        elem.textContent = name;
-    });
+    document.getElementById('outputName2').textContent = name;
     document.getElementById('outputPlural').textContent = plural;
     document.getElementById('outputPlural2').textContent = plural2;
     document.getElementById('outputAdjective2').textContent = adjective2;
@@ -38,12 +32,8 @@ document.getElementById('madLibForm').addEventListener('submit', function(event)
     document.getElementById('outputAdjective3').textContent = adjective3;
     document.getElementById('outputPlural3').textContent = plural3;  
     document.getElementById('outputCreature').textContent = creature;
-    document.querySelectorAll('.outputName').forEach(function(elem) {
-        elem.textContent = name;
-    });
-    document.querySelectorAll('.outputFood').forEach(function(elem) {
-        elem.textContent = food;
-    });    
+    document.getElementById('outputName3').textContent = name;
+    document.getElementById('outputFood2').textContent = food; 
     document.getElementById('outputAdjective4').textContent = adjective4;       
 
     // Show Mad Lib output
