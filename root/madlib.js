@@ -8,7 +8,6 @@ document.getElementById('madLibForm').addEventListener('submit', function(event)
     const name = document.getElementById('name').value;
     const food = document.getElementById('food').value;
     const noun = document.getElementById('noun').value;
-    const name = document.getElementById('name').value;
     const plural = document.getElementById('plural').value;
     const plural2 = document.getElementById('plural2').value; 
     const adjective2 = document.getElementById('adjective2').value;
@@ -16,8 +15,6 @@ document.getElementById('madLibForm').addEventListener('submit', function(event)
     const adjective3 = document.getElementById('adjective3').value;
     const plural3 = document.getElementById('plural3').value;  
     const creature = document.getElementById('creature').value; 
-    const name = document.getElementById('name').value;
-    const food = document.getElementById('food').value;
     const adjective4 = document.getElementById('adjective4').value; 
 
     // Update Mad Lib output
@@ -27,7 +24,9 @@ document.getElementById('madLibForm').addEventListener('submit', function(event)
     document.getElementById('outputName').textContent = name;
     document.getElementById('outputFood').textContent = food;
     document.getElementById('outputNoun').textContent = noun;
-    document.getElementById('outputName').textContent = name;
+    document.querySelectorAll('.outputName').forEach(function(elem) {
+        elem.textContent = name;
+    });
     document.getElementById('outputPlural').textContent = plural;
     document.getElementById('outputPlural2').textContent = plural2;
     document.getElementById('outputAdjective2').textContent = adjective2;
@@ -35,8 +34,12 @@ document.getElementById('madLibForm').addEventListener('submit', function(event)
     document.getElementById('outputAdjective3').textContent = adjective3;
     document.getElementById('outputPlural3').textContent = plural3;  
     document.getElementById('outputCreature').textContent = creature;
-    document.getElementById('outputName').textContent = name;
-    document.getElementById('outputFood').textContent = food;
+    document.querySelectorAll('.outputName').forEach(function(elem) {
+        elem.textContent = name;
+    });
+    document.querySelectorAll('.outputFood').forEach(function(elem) {
+        elem.textContent = food;
+    });    
     document.getElementById('outputAdjective4').textContent = adjective4;       
 
     // Show Mad Lib output
