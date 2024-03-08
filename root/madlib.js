@@ -21,8 +21,12 @@ document.getElementById('madLibForm').addEventListener('submit', function(event)
     document.getElementById('outputCity').textContent = city;
     document.getElementById('outputAdjective').textContent = adjective;
     document.getElementById('outputAnimal').textContent = animal;
-    document.getElementById('outputName').textContent = name;
-    document.getElementById('outputFood').textContent = food;
+    document.querySelectorAll('.outputName').forEach(function(elem) {
+        elem.textContent = name;
+    });
+    document.querySelectorAll('.outputFood').forEach(function(elem) {
+        elem.textContent = food;
+    });   
     document.getElementById('outputNoun').textContent = noun;
     document.querySelectorAll('.outputName').forEach(function(elem) {
         elem.textContent = name;
