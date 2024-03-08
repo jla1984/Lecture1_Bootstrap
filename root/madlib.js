@@ -8,6 +8,7 @@ document.getElementById('madLibForm').addEventListener('submit', function(event)
     const name = document.getElementById('name').value;
     const food = document.getElementById('food').value;
     const noun = document.getElementById('noun').value;
+    const name = document.getElementById('name').value;
     const plural = document.getElementById('plural').value;
     const plural2 = document.getElementById('plural2').value; 
     const adjective2 = document.getElementById('adjective2').value;
@@ -15,6 +16,8 @@ document.getElementById('madLibForm').addEventListener('submit', function(event)
     const adjective3 = document.getElementById('adjective3').value;
     const plural3 = document.getElementById('plural3').value;  
     const creature = document.getElementById('creature').value; 
+    const name = document.getElementById('name').value;
+    const food = document.getElementById('food').value;
     const adjective4 = document.getElementById('adjective4').value; 
 
     // Update Mad Lib output
